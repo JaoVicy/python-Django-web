@@ -17,7 +17,7 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-created_on']
-        abstract = True
+
 
     def __str__(self):
         return self.title
