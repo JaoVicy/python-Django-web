@@ -13,7 +13,7 @@ class PostView(generic.View):
 def post_detail(request, slug):
     template_name = "post_detail.html"
     post = get_object_or_404(Post, slug=slug)
-    comments = post.comments.filter(active=True).order.by("-created_on")
+    comments = post.comments.filter(active=True).order_by("-created_on")
     new_comment = None
 
     if request.method == "POST":
