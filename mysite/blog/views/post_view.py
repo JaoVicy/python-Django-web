@@ -7,8 +7,8 @@ from blog.models import Post
 
 
 class PostView(generic.View):
-    def get(self, request, *args, **kwargs):
-        return HttpResponse("Hello World!")
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    template_name = "index.html"
 
 def post_detail(request, slug):
     template_name = "post_detail.html"
