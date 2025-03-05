@@ -33,6 +33,6 @@ def post_detail(request, slug):
             "post": post,
             "comments": comments,
             "new_comment": new_comment,
-            "comments_form": comments_form,
+            "comment_form": comments_form,
         },
     )
