@@ -1,4 +1,4 @@
-# 📝 python-Django-web
+# 📝 Python-Django-Web
 
 Projeto de um Blog Pessoal desenvolvido com Django. 🚀
 
